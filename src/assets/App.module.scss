@@ -1,0 +1,55 @@
+.title {
+  border: 1px dashed #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addBtnBox {
+  position: relative;
+
+  .btnEar {
+    display: none;
+    position: absolute;
+    top: -16px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #0c4755;
+    border-radius: 6px 6px 0 0;
+    color: #f0f0f0;
+  }
+
+  .addBtn {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0c4755;
+    color: #f0f0f0;
+  }
+
+  &:hover,
+  &:active {
+    .addBtn {
+      border-radius: 0 0 6px 6px;
+      background-color: rgba(#164e5c, 0.85);
+    }
+
+    .btnEar {
+      display: block;
+      background-color: rgba(#164e5c, 0.85);
+    }
+  }
+}
